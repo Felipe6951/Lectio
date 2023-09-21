@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Bibliotecário</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="logo do site" width="120px" height="100px" class="d-inline-block align-text-top logo">
+                </a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse barra">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bibliotecas.html">Bibliotecas</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="dividers" style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                <li class="breadcrumb-item"><a href="bibliotecas.html">Bibliotecas</a></li>
+                <li class="breadcrumb-item"><a href="area_atuacao.html">EM São Benedito</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Acessar</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Bibliotecário</h2>
+
+            <section class="escolher">
+                <form action="">
+                    <div class="text d-flex justify-content-center">
+
+                        <label id="loginLabel" for="login">Login</label>
+                        <label for="cadastrar">Cadastrar</label>
+
+                    </div>
+                    <div id="geral">
+                        <input type="radio" name="group" id="login" checked>
+                        <div class="aux" id="login">
+
+                            <section class="login">
+                                <div>
+                                    <label for="inputCPF" class="form-label">CPF</label>
+                                    <input type="number" class="form-control" id="inputCPF">
+                                </div>
+                                <div>
+                                    <label for="inputSenha" class=""> Senha</label>
+                                    <input type="password" class="form-control" id="inputSenha">
+                                </div>
+                                <a href="gerenciamento_aluno.html"><button type="button">Entrar</button></a>
+                            </section>
+
+
+                        </div>
+
+                        <input type="radio" name="group" id="cadastrar">
+                        <div class="aux" id="cadastrar">
+
+
+                            <fieldset>
+                                <legend class="legend-border">Pessoal</legend>
+
+                                <section class="register-one container-fluid">
+
+                                    <div>
+
+                                        <label for="nome">Nome completo</label>
+                                        <input class="form-control" type="text" name="" id="nome">
+
+                                        <label for="cpf">CPF</label>
+                                        <input class="form-control" type="text" name="" id="cpf">
+
+                                        <label for="genero">Gênero</label>
+                                        <select class="form-select" aria-label="Default select example" name="" id="genero">
+                                            <option value="" >Selecione o gênero</option>
+                                            <option value="">Masculino</option>
+                                            <option value="">Feminino</option>
+                                            <option value="">Prefiro não declarar</option>
+                                            </select>
+
+                                    </div>
+                                    <div>
+
+                                        <label for="email">Email</label>
+                                        <input class="form-control" type="email" name="" id="email">
+
+                                        <label for="celular">Celular</label>
+                                        <input class="form-control" type="number" name="" id="celular">
+
+                                        <label for="etnia">Etnia</label>
+                                        <select class="form-select" aria-label="Default select example" name="" id="etnia">
+                                            <option value="">Selecione sua etnia</option>
+                                            <option value="">Branco</option>
+                                            <option value="">Negro</option>
+                                            <option value="">Pardo</option>
+                                            <option value="">Indigena</option>
+                                            <option value="">Outros</option>
+                                         </select>
+
+                                    </div>
+
+                                </section>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend class="legend-border">Escola</legend>
+
+                                <section class="register-two">
+                                    <div>
+                                        <label for="codigoInepMec">Código INEP/MEC</label>
+                                        <input class="form-control" type="text" name="" id="codigoInepMec">
+
+                                        <label for="codigoVerificacao">Código de verificação</label>
+                                        <input class="form-control" type="text" name="" id="codigoVerificacao">
+                                    </div>
+                                    <div>
+                                        <label for="escola">Nome da escola</label>
+                                        <select class="form-select" name="" id="escola">
+
+                                        <option>Selecione a escola</option>
+                                        <option>Escola Municipal São Benedito</option>
+                                        <option>Escola Municipal Prof. Nila Rêgo</option>
+                                        <option>Escola Municipal Prof. Severino Bezerra</option>
+                                        <option>Escola Municipal Dr. José Torquato de Figueiredo</option>
+                                        <option>Escola Municipal Francisco Aires Segundo</option>
+                                        <option>Escola Municipal Francisco Torquato do Rêgo</option>
+                                        <option>Centro Municipal de Educação Infantil Prof. Thelma Batalha</option>
+                                    
+                                    </select>
+                                    </div>
+                                </section>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend class="legend-border">Senha</legend>
+
+                                <section class="register-three">
+                                    <div>
+                                        <label for="senha">Senha</label>
+                                        <input class="form-control" type="password" name="" id="senha">
+
+                                        <label for="confirmar">Confirmar senha</label>
+                                        <input class="form-control" type="password" name="" id="confirmar">
+                                    </div>
+                                </section>
+                            </fieldset>
+                            <div class="botao">
+                                <button type="button" class="btn btn-danger btts">Cancelar</button>
+                                <button type="button" class="btn btn-success btts"><a href="login_bibliotecario.html">Salvar</a></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </section>
+    </main>
+    <footer>
+        <div class="flex-int">
+            <div class="col-5">
+                <img class="logo" src="img/Logo.png" alt="logo do site">
+            </div>
+
+            <div class="col-3">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="bibliotecas.html">Bibliotecas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <div class="flex-footer">
+                    <img src="img/localizacao.png" height="30px" alt="icone de localização">
+                    <p>Av. Getúlio Vargas, Nº 1258 - Centro - CEP: 59.900-000. Pau dos Ferros-RN.</p>
+                </div>
+                <div class="flex-footer">
+                    <img src="img/o-email.png" height="20px" alt="icone de email">
+                    <p>seducpmpf@gmail.com</p>
+                </div>
+                <div class="flex-footer">
+                    <img src="img/telefone.png" height="20px" alt="icone de telefone">
+                    <p>(84) 9.9624-7193</p>
+                </div>
+            </div>
+        </div>
+        <p class="sobre-text rodape">© Copyright LECTIO. Todos os direitos reservados.</p>
+
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>

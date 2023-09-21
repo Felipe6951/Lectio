@@ -1,0 +1,267 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    padding-left: 116px;
+    padding-top: 12px;
+    background-color: #37517E;
+}
+
+body {
+    padding-top: 98px;
+}
+
+nav .logo {
+    width: 90px;
+    height: 70.07px;
+    background: url(6936988269_3c882622-1c73-4d8c-9201-6f4f4d22f6c6.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+footer .logo {
+    width: 130px;
+    height: 110.07px;
+    background: url(6936988269_3c882622-1c73-4d8c-9201-6f4f4d22f6c6.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.barra {
+    margin-left: 107px;
+    margin-top: 16px;
+}
+
+.barra a {
+    margin-right: 30px;
+    font-size: 18px;
+    color: #FFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #37517E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: underline;
+}
+
+.btts a {
+    text-decoration: none;
+    color: white;
+}
+
+.dividers {
+    margin: 40px 0;
+}
+
+.text label:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #37517E;
+    color: #37517E;
+    font-weight: bold;
+}
+
+#geral .aux {
+    display: none;
+}
+
+#geral input[type="radio"]:checked+div {
+    display: block;
+}
+
+#geral input[type="radio"] {
+    display: none;
+}
+
+.text label {
+    font-size: 26px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.register-one,
+.register-two,
+.register-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px 40px 80px 40px;
+}
+
+.register-one div,
+.register-two div,
+.register-three div {
+    width: 48%;
+}
+
+.register-one input,
+.register-two input,
+.register-three input,
+.form-select {
+    border: 2px solid #37517E;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.btts {
+    width: 10%;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.login input {
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #37517E;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.login {
+    border: 2px dashed #37517E;
+    width: 50%;
+    margin: auto;
+    padding: 30px 50px 30px 50px;
+}
+
+.login button {
+    width: 100%;
+    height: 50px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFF;
+    background: #8797B2;
+    border: 2px solid #37517E;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.login button:hover {
+    background-color: #37517E;
+}
+
+.login div {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+footer {
+    background-color: #37517E;
+    color: #FFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 50px;
+}
+
+footer .flex-footer p {
+    margin-left: 15px;
+}
+
+.rodape {
+    margin-top: 40px;
+    padding-bottom: 32px;
+    margin-bottom: 0px;
+}
+
+.flex-footer {
+    display: flex;
+    width: 60%;
+    margin-right: 0px;
+}
+
+.flex-int {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+footer a:hover {
+    color: rgb(207, 203, 203);
+}
+
+.sobre-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-5 {
+    text-align: center;
+}
+
+#inputPesquisa {
+    border: none;
+}
+
+.icon {
+    width: 2%;
+    float: right;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+fieldset {
+    margin-top: 50px;
+    border: 2px dashed #37517E;
+    position: relative;
+}
+
+legend.legend-border {
+    width: inherit;
+    /* Or auto */
+    padding: 0 10px;
+    /* To give a bit of padding on the left and right */
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    background-color: white;
+}
+
+footer a:hover,
+nav a:hover {
+    color: rgb(207, 203, 203)!important;
+}
